@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="addressGCMSubscriber" type="id" />
+    <item name="addressHomeFragment" type="id"/>
+    <item name="addressPickupScheduleFragment" type="id" />
+    <item name="addressPackageDetailsFragment" type="id" />
+    <item name="addressRecipientDetailsFragment" type="id" />
+    <item name="addressPickupReviewFragment" type="id" />
+    <item name="addressPickupSubmitFragment" type="id" />
+    <item name="addressTrackingFragment" type="id" />
+    <item name="addressNotificationListFragment" type="id"/>
+    <item name="addressPackageListFragment" type="id"/>
+    <item name="addressReceiptActivity" type="id"/>
+
+
+    <item name="addressMainRepository" type="id"/>
+    <item name="addressLoginRepository" type="id" />
+    <item name="addressNotificationGroupRepository" type="id" />
+    <item name="addressPickupRepository" type="id" />
+    <item name="addressTrackingRepository" type="id" />
+    <item name="addressPackagesListRepository" type="id"/>
+    <item name="addressReceiptRepository" type="id"/>
+
+
+</resources>

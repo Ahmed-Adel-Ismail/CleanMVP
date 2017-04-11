@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DriverAppPasswordHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_00</item>
+    </style>
+
+    <style name="DriverAppPasswordError" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_00</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="DefaultTextView" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+
+    <style name="PickupProcessTitle" parent="DefaultTextView">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+    </style>
+
+    <style name="PickupProcessDetails" parent="DefaultTextView">
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:textSize">@dimen/text_size_01</item>
+    </style>
+
+    <style name="PickupProcessDetailsCheckBox" parent="PickupProcessDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:alpha">1</item>
+        <item name="android:textColor">@color/gray_5</item>
+    </style>
+
+    <style name="PickupProcessPaymentServiceTypeColumn">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="PickupProcessPaymentPriceColumn">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="PickupProcessPaymentQuantityColumn" parent="@style/PickupProcessPaymentPriceColumn">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="PickupProcessPaymentTotalServicesLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+    <style name="PickupProcessPaymentTotalServicesLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_01</item>
+    </style>
+
+    <style name="PickupProcessPaymentTotalServicesDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_01</item>
+    </style>
+
+
+    <style name="PickupProcessHeaderLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:background">@color/pickup_process_expandable_header_bg_gray_light</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+    </style>
+
+    <style name="PickupProcessHeaderTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@color/pickup_process_expandable_header_text_gray_dark</item>
+        <item name="android:textSize">@dimen/text_size_03</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PickupProcessHeaderImage">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:src">@drawable/pickup_process_right_arrow</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pickup_location_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/map_outer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/map_inner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/home_map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:clickable="true">
+
+        <include layout="@layout/layout_loading_map" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_outer_internet_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true">
+        <include layout="@layout/layout_internet_error" />
+
+    </FrameLayout>
+
+
+    <include layout="@layout/layout_search_bar" />
+
+    <ImageView
+        android:id="@+id/radar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginRight="@dimen/radar_image_margin"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/home_floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</FrameLayout>

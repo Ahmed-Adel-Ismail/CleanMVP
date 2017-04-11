@@ -1,0 +1,34 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        // scala from https://github.com/saturday06/gradle-android-scala-plugin
+//        classpath 'com.github.xingda920813:gradle-android-scala-plugin:java8'
+
+        classpath 'org.ajoberstar:gradle-git:0.6.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+
+
+
+

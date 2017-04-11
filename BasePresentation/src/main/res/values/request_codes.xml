@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="requestCodeLocationPermission">1</integer>
+    <integer name="requestCodeCameraPermission">2</integer>
+</resources>

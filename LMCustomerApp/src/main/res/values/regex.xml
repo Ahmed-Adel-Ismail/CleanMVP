@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pickup_request_recipient_name_regex">^[a-zA-Z\\u0600-\\u06FF][a-zA-Z\\u0600-\\u06FF]*$</string>
+    <string name="pickup_request_address_regex">^[^\\p{Punct}]*$</string>
+</resources>

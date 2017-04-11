@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pickup_process_expandable_header_bg_gray_light">#EBEFF2</color>
+    <color name="pickup_process_expandable_header_text_gray_dark">#7D848C</color>
+    <color name="pickup_process_text_blue_dark">#39464C</color>
+    <color name="pickup_process_text_gray_light">#5C5D5F</color>
+    <color name="pickup_process_button_blue_light">#3497D8</color>
+    <color name="pickup_process_button_gray_medium">#7D848C</color>
+</resources>

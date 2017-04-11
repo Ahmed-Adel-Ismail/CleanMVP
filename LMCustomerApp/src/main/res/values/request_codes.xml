@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- must be unique values, please read the request_codes.xml file in BasePresentation Module-->
+    <integer name="requestCodeSearchAutoComplete">3</integer>
+    <integer name="requestCodeCapturePhoto">4</integer>
+    <integer name="requestCodeChooseImage">5</integer>
+    <integer name="requestCodeSubmitActivity">6</integer>
+    <integer name="requestCodePickupRequestMenu">7</integer>
+    <integer name="requestCodePickupRequestScreen">8</integer>
+    <integer name="requestCodeCallPermission">9</integer>
+
+    <string name="package_id">packageId</string>
+    <string name="pickup_request_id">pickupRequestId</string>
+    <string name="not_detailed_title">notificationItemTitle</string>
+    <string name="not_detailed_body">notificationItemBody</string>
+    <string name="not_title">notificationTitle</string>
+    <string name="not_body">notificationBody</string>
+    <string name="not_type">type</string>
+    <string name="not_time">time</string>
+
+
+</resources>

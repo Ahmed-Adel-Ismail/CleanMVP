@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Class name="E:\BitbucketRepos\LastMile_App\LMDriverApp\build\generated\source\r\debug\android\support\design\R.java" />
+        <Class name="~.*\r\$.*" />
+    </Match>
+</FindBugsFilter>

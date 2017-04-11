@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:elevation="5dp"
+    android:id="@+id/capture_popup_menu">
+
+    <TextView
+        android:id="@+id/capture"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        android:padding="@dimen/radar_image_margin"
+        android:textSize="@dimen/text_size_3"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:elevation="2dp"
+        android:maxLines="1"
+        android:background="@drawable/selector_camera_button"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/concrete" />
+
+    <TextView
+        android:id="@+id/choose_image"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/radar_image_margin"
+        android:textColor="@color/black"
+        android:text="@string/choose_from_gallery"
+        android:textSize="@dimen/text_size_3"
+        android:onClick="onClick"
+        android:elevation="2dp"
+        android:maxLines="1"
+        android:background="@drawable/selector_camera_button"/>
+
+
+
+</LinearLayout>

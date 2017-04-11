@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/drawable_padding"
+            android:layout_marginRight="@dimen/drawable_padding"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pickup_review_images_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/pickup_review_top_left_img"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_off" />
+
+                <ImageView
+                    android:id="@+id/pickup_review_top_right_img"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_off" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/seekbar_width">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pickup_at_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/payment_at"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_payment_at_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bit_margin"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/delivery"
+                        android:textColor="@color/concrete"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/estimate_cost_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/estimate_label"
+                        android:textColor="@color/belize_hole"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_estimate_cost_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bit_margin"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="0"
+                        android:textColor="@color/belize_hole"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/shipping_service_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/shipping_service" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_shipment_type_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/shipping_service" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pickup_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/pickup_time_label" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_pickup_time_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/pickup_time_label" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pickup_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/pickup_address" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_address_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/pickup_address" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp">
+
+                    <ProgressBar
+                        android:id="@+id/pickup_review_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:elevation="5dp"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/pickup_review_submit_request_btn"
+                        style="@style/BlueButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:onClick="onClick"
+                        android:text="@string/submit_label" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/nickname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/nickname" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_nickname_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/nickname" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/package_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/review_package_type_title" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_package_type_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/review_package_type_title" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/package_weight_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/package_weight" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_package_weight_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/package_weight" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/package_brief_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/what_inside" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_whats_inside_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/what_inside" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/additional_services_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/additional_service" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_additional_service_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/additional_service" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/recipient_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_name_label" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_recipient_name_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_name_label" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mobile_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_phone_label" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_recioient_phone_no_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_phone_label" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recipient_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_address" />
+
+
+                    <TextView
+                        android:id="@+id/pickup_review_recipient_address_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/notes_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bit_margin">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_6" />
+
+                    <TextView
+                        style="@style/TitlePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf"
+                        android:text="@string/recipient_notes_label" />
+
+                    <TextView
+                        android:id="@+id/pickup_review_recipient_notes_txt"
+                        style="@style/ValuePackageReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="assets/PTS55F.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

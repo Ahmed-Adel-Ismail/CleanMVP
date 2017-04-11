@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/screen_pickup_process_payment_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/screen_pickup_process_payment_header_invoice_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:alpha="0.8"
+            android:text="@string/screen_pickup_process_payment_invoice"
+            android:textColor="@color/midnight_blue"
+            android:textSize="@dimen/text_size_00" />
+
+        <TextView
+            android:id="@+id/screen_pickup_process_payment_header_date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_pickup_process_payment_header_invoice_text_view"
+            android:alpha="0.8"
+            android:text="@string/screen_pickup_process_payment_date"
+            android:textColor="@color/midnight_blue"
+            android:textSize="@dimen/text_size_00" />
+
+        <TextView
+            android:id="@+id/screen_pickup_process_payment_header_time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_pickup_process_payment_header_date_text_view"
+            android:alpha="0.8"
+            android:text="@string/screen_pickup_process_payment_time"
+            android:textColor="@color/midnight_blue"
+            android:textSize="@dimen/text_size_00" />
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_service_types_outer_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_pickup_process_payment_header_date_text_view">
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_zero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:alpha="0.7"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="@string/screen_pickup_process_payment_service_type"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="@string/screen_pickup_process_payment_quantity"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="@string/screen_pickup_process_payment_price"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_zero"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_one"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_two"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_three"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_four"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_payment_service_types_linear_layout_line_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_pickup_process_payment_service_types_linear_layout_line_five"
+                android:layout_marginTop="16dp"
+                android:alpha="0.6"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="11">
+
+                <TextView
+                    style="@style/PickupProcessPaymentServiceTypeColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentQuantityColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/PickupProcessPaymentPriceColumn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/screen_pickup_process_payment_service_types_bottom_border_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/screen_pickup_process_payment_service_types_outer_relative_layout"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
+            android:background="@color/gray_5" />
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_total_services_relative_layout"
+            style="@style/PickupProcessPaymentTotalServicesLayout"
+            android:layout_below="@id/screen_pickup_process_payment_service_types_bottom_border_view">
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_services_left_text_view"
+                style="@style/PickupProcessPaymentTotalServicesLabel"
+                android:text="@string/screen_pickup_process_payment_total_service" />
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_services_right_text_view"
+                style="@style/PickupProcessPaymentTotalServicesDetail" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_total_without_tax_relative_layout"
+            style="@style/PickupProcessPaymentTotalServicesLayout"
+            android:layout_below="@id/screen_pickup_process_payment_total_services_relative_layout">
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_without_tax_left_text_view"
+                style="@style/PickupProcessPaymentTotalServicesLabel"
+                android:text="@string/screen_pickup_process_payment_total_without_tax" />
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_without_tax_right_text_view"
+                style="@style/PickupProcessPaymentTotalServicesDetail" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_value_added_tax_relative_layout"
+            style="@style/PickupProcessPaymentTotalServicesLayout"
+            android:layout_below="@id/screen_pickup_process_payment_total_without_tax_relative_layout">
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_value_added_tax_left_text_view"
+                style="@style/PickupProcessPaymentTotalServicesLabel"
+                android:text="@string/screen_pickup_process_payment_value_added_tax" />
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_value_added_tax_right_text_view"
+                style="@style/PickupProcessPaymentTotalServicesDetail" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_total_amount_relative_layout"
+            style="@style/PickupProcessPaymentTotalServicesLayout"
+            android:layout_below="@id/screen_pickup_process_payment_value_added_tax_relative_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_amount_left_text_view"
+                style="@style/PickupProcessPaymentTotalServicesLabel"
+                android:text="@string/screen_pickup_process_payment_total_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_total_amount_right_text_view"
+                style="@style/PickupProcessPaymentTotalServicesDetail"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/screen_pickup_process_payment_total_services_bottom_border_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/screen_pickup_process_payment_total_amount_relative_layout"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
+            android:background="@color/gray_5" />
+
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_payment_method_relative_layout"
+            style="@style/PickupProcessPaymentTotalServicesLayout"
+            android:layout_below="@id/screen_pickup_process_payment_total_services_bottom_border_view"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_method_left_text_view"
+                style="@style/PickupProcessPaymentTotalServicesLabel"
+                android:text="@string/screen_pickup_process_payment_payment_method_title"
+                android:textSize="@dimen/text_size_02" />
+
+            <TextView
+                android:id="@+id/screen_pickup_process_payment_method_right_text_view"
+                style="@style/PickupProcessPaymentTotalServicesDetail"
+                android:textSize="@dimen/text_size_02" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/screen_pickup_process_payment_method_bottom_border_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/screen_pickup_process_payment_method_relative_layout"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
+            android:background="@color/gray_5" />
+
+        <TextView
+            android:id="@+id/screen_pickup_process_payment_terms_and_conditions_label"
+            style="@style/PickupProcessPaymentTotalServicesLabel"
+            android:layout_below="@id/screen_pickup_process_payment_method_bottom_border_view"
+            android:alpha="0.7"
+            android:text="@string/screen_pickup_process_payment_terms_and_condition"
+            android:textSize="@dimen/text_size_02" />
+
+        <TextView
+            android:id="@+id/screen_pickup_process_payment_terms_and_conditions_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_pickup_process_payment_terms_and_conditions_label"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:ellipsize="end"
+
+            android:maxLines="4"
+            android:singleLine="false"
+            android:text="@string/screen_pickup_process_payment_terms_and_condition_details"
+            android:textSize="@dimen/text_size_00" />
+
+        <LinearLayout
+            android:id="@+id/screen_pickup_process_payment_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/screen_pickup_process_payment_terms_and_conditions_details"
+            android:layout_margin="32dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/screen_pickup_process_payment_buttons_cancel"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/pickup_process_button_gray_medium"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/screen_pickup_process_payment_button_cancel"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/screen_pickup_process_payment_buttons_submit"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/pickup_process_button_blue_light"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/screen_pickup_process_payment_button_submit"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/screen_pickup_process_payment_main_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

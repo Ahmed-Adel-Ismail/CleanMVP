@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_host_container_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/screen_home_main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mapzen.android.graphics.MapView
+            android:id="@+id/screen_home_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:apiKey="@string/mapzen_api_key" />
+
+        <ProgressBar
+            android:id="@+id/screen_home_main_progress_bar"
+            style="@style/ProgressBarTopRight"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/screen_home_recenter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:elevation="6dp"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                android:tint="@color/white"
+                app:layout_behavior="com.base.presentation.behaviors.MoveUpwardBehavior"
+                app:fabSize="normal"
+                tools:targetApi="lollipop" />
+
+            <FrameLayout
+                android:id="@+id/screen_home_floating_action_button_frame_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                app:layout_behavior="com.base.presentation.behaviors.MoveUpwardBehavior">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/screen_home_floating_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/home_fab_start_nav"
+                    android:tint="@color/white"
+                    tools:targetApi="lollipop"
+                    app:fabSize="normal"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

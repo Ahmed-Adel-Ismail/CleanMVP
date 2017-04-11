@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="screen_verify_package_labels_details_linear_layout_ids">
+        <item>screen_verify_package_labels_details_check_box_one</item>
+        <item>screen_verify_package_labels_details_check_box_two</item>
+        <item>screen_verify_package_labels_details_check_box_three</item>
+        <item>screen_verify_package_labels_details_check_box_four</item>
+        <item>screen_verify_package_labels_details_check_box_five</item>
+        <item>screen_verify_package_labels_details_check_box_six</item>
+        <item>screen_verify_package_labels_details_check_box_seven</item>
+        <item>screen_verify_package_labels_details_check_box_eight</item>
+    </string-array>
+
+    <string-array name="screen_verify_package_additional_services_details_linear_layout_ids">
+        <item>screen_verify_package_additional_services_details_check_box_one</item>
+        <item>screen_verify_package_additional_services_details_check_box_two</item>
+        <item>screen_verify_package_additional_services_details_check_box_three</item>
+        <item>screen_verify_package_additional_services_details_check_box_four</item>
+        <item>screen_verify_package_additional_services_details_check_box_five</item>
+        <item>screen_verify_package_additional_services_details_check_box_six</item>
+        <item>screen_verify_package_additional_services_details_check_box_seven</item>
+        <item>screen_verify_package_additional_services_details_check_box_eight</item>
+
+    </string-array>
+
+    <string-array name="screen_verify_package_payment_at_details_linear_layout_ids">
+        <item>screen_verify_package_payment_at_details_check_box_one</item>
+        <item>screen_verify_package_payment_at_details_check_box_two</item>
+        <item>screen_verify_package_payment_at_details_check_box_three</item>
+        <item>screen_verify_package_payment_at_details_check_box_four</item>
+    </string-array>
+
+    <string-array name="screen_verify_package_buy_with_details_linear_layout_ids">
+        <item>screen_verify_package_buy_with_details_check_box_one</item>
+        <item>screen_verify_package_buy_with_details_check_box_two</item>
+        <item>screen_verify_package_buy_with_details_check_box_three</item>
+        <item>screen_verify_package_buy_with_details_check_box_four</item>
+    </string-array>
+
+    <string-array name="screen_pickup_process_payment_service_types_linear_layouts_ids">
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_one</item>
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_two</item>
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_three</item>
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_four</item>
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_five</item>
+        <item>screen_pickup_process_payment_service_types_linear_layout_line_six</item>
+    </string-array>
+
+</resources>

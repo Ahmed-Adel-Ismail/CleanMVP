@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/screen_pickup_process_documents_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:id="@+id/screen_pickup_process_documents_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text="@string/screen_pickup_process_documents_uploading_title"
+            android:textSize="@dimen/text_size_02"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/screen_pickup_process_documents_images_main_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_pickup_process_documents_title_text_view"
+            android:layout_margin="16dp"
+            android:clickable="false"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_documents_images_titles_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/screen_pickup_process_documents_images_customer_id_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:text="@string/screen_pickup_process_documents_uploading_customer_id"
+                    android:textSize="@dimen/text_size_00" />
+
+                <TextView
+                    android:id="@+id/screen_pickup_process_documents_images_credit_card_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:text="@string/screen_pickup_process_documents_uploading_credit_card"
+                    android:textSize="@dimen/text_size_00" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/screen_pickup_process_documents_images_images_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/screen_pickup_process_documents_images_titles_linear_layout"
+                android:clickable="false"
+                android:descendantFocusability="afterDescendants"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/screen_pickup_process_documents_images_customer_id_image_image_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pickup_process_id" />
+
+                <ImageView
+                    android:id="@+id/screen_pickup_process_documents_images_credit_card_image_image_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pickup_process_receipt" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/screen_pickup_process_documents_submit_button"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/screen_pickup_process_documents_images_images_linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"
+                android:text="@string/screen_pickup_process_documents_uploading_submit"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/screen_pickup_process_documents_main_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</RelativeLayout>

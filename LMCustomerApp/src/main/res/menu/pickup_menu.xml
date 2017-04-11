@@ -1,0 +1,25 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/pickup_menu_notification"
+        android:icon="@drawable/notification"
+        android:orderInCategory="100"
+        android:title="@string/notification"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <group android:id="@+id/pickup_menu_group"
+        android:visible="false">
+
+        <item
+            android:id="@+id/pickup_cancel_request"
+            android:orderInCategory="100"
+            android:title="@string/menu_cancel"
+            app:showAsAction="never"
+            tools:ignore="AppCompatResource" />
+
+    </group>
+
+</menu>

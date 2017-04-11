@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="notification_driver_busy">busy</string>
+    <string name="notification_driver_assigned">assigned</string>
+    <string name="notification_driver_arrived">arrived</string>
+    <string name="notification_driver_on_his_way">onHisWay</string>
+    <string name="notification_invoice">INVOICE</string>
+    <string name="notification_tracking_number">trackingNumber</string>
+    <string name="notification_rating">rating</string>
+    <string name="notification_canceled">cancelled</string>
+
+</resources>

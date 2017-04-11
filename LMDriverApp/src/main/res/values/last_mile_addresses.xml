@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="addressLoginFragment" type="id" />
+    <item name="addressHomeFragment" type="id" />
+    <item name="addressPickupPackageVerificationFragment" type="id" />
+    <item name="addressPickupPaymentFragment" type="id" />
+    <item name="addressPickupDocumentsFragment" type="id" />
+
+    <item name="addressLoginRepository" type="id" />
+    <item name="addressMainRepository" type="id" />
+    <item name="addressMainLocationsRepository" type="id" />
+    <item name="addressPickupProcessRepository" type="id" />
+    <item name="addressPickupProcessGetMethodRepository" type="id" />
+    <item name="addressPickupProcessPutMethodRepository" type="id" />
+
+    <item name="addressScalaTestRepository" type="id" />
+
+    <item name="addressLocationTrackingService" type="id" />
+    <item name="addressLocationTrackingRepository" type="id" />
+
+    <item name="addressOnDemandPickupRepository" type="id" />
+    <item name="addressOnDemandPickupService" type="id" />
+
+</resources>

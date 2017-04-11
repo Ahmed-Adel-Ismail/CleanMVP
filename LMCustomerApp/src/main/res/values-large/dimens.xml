@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_1">90dp</dimen>
+    <dimen name="margin_8">99dp</dimen>
+    <dimen name="package_margin">20dp</dimen>
+
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="image_width">200dp</dimen>
+
+</resources>

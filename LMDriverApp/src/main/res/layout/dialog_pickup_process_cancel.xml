@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/dialog_pickup_process_cancel_reasons_spinner"
+        style="@style/PickupProcessDetails"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:prompt="@string/screen_pickup_process_payment_cancellation_spinner_title" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/dialog_pickup_process_cancel_additional_notes_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_pickup_process_cancel_reasons_spinner"
+        android:layout_marginTop="16dp"
+        android:alpha="0.7"
+        android:gravity="left|center_vertical"
+        android:textColorHint="@color/black"
+        app:hintAnimationEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_pickup_process_cancel_additional_notes_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:hint="@string/screen_pickup_process_payment_cancellation_additional_notes"
+            android:maxLength="250"
+            android:inputType="text"
+            android:lines="1"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray_5"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:backgroundTint="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

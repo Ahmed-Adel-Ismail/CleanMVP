@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- production ips -->
+
+
+    <string name="serverProductionUrlHttps">https://41.38.174.217:</string>
+    <string name="serverProductionUrlWss">wss://41.38.174.217:9761</string>
+
+    <!--<string name="serverProductionUrlHttps">https://192.168.1.104:</string>-->
+    <!--<string name="serverProductionUrlWss">wss://192.168.1.104:9761</string>-->
+
+    <!-- test ips -->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.104:</string>-->
+    <!--<string name="serverTestUrlWss">ws://192.168.1.104:9761</string>-->
+
+    <string name="serverTestUrlHttps">https://192.168.1.105:</string>
+    <string name="serverTestUrlWss">wss://192.168.1.105:9761 </string>
+
+    <!--<string name="serverTestUrlHttps">https://41.38.174.217:</string>-->
+    <!--<string name="serverTestUrlWss">ws://41.38.174.217:9761</string>-->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.241:</string>-->
+    <!--<string name="serverTestUrlWss">ws://192.168.1.241:9761</string>-->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.242:</string>-->
+    <!--<string name="serverTestUrlWss">ws://192.168.1.242:9761</string>-->
+
+    <!-- ports & paths -->
+
+
+    <string name="requestRefreshToken">8080/u/oauth/token</string>
+    <string name="requestRegisterFirebaseToken">8080/customer/savefirebasetoken</string>
+
+    <item name="requestLogin" type="id" />
+    <string name="requestLogin">8080/u/oauth/token</string>
+
+    <item name="requestUserInfo" type="id" />
+    <string name="requestUserInfo">8080/u/user</string>
+
+    <item name="requestPackageTypes" type="id" />
+    <string name="requestPackageTypes">8080/packagetypes/findall</string>
+
+    <item name="requestShipmentService" type="id" />
+    <string name="requestShipmentService">8080/shipmentservice/findallshipmentservice</string>
+
+    <item name="requestShipmentServiceTypes" type="id" />
+    <string name="requestShipmentServiceTypes">8080/shipmentservice/findalltypes</string>
+
+    <item name="requestCountries" type="id" />
+    <string name="requestCountries">8080/countryandcity/countries</string>
+
+    <item name="requestCities" type="id" />
+    <string name="requestCities">8080/countryandcity/cities</string>
+
+    <item name="requestSubmitPickupRequest" type="id" />
+    <string name="requestSubmitPickupRequest">8082/file</string>
+
+    <item name="requestCreatePackage" type="id" />
+    <string name="requestCreatePackage">8080/packages/createpackage</string>
+
+    <item name="requestCreatePickupRequest" type="id" />
+    <string name="requestCreatePickupRequest">8080/pickuprequest/createpickuprequest</string>
+
+    <item name="requestSavePickupRequest" type="id" />
+    <string name="requestSavePickupRequest">8080/requestdraft/savedraft</string>
+
+    <item name="requestPickupTimeInterval" type="id" />
+    <string name="requestPickupTimeInterval">8080/pickuptime/findall</string>
+
+    <item name="requestCancelPickupRequest" type="id" />
+    <string name="requestCancelPickupRequest">8080/pickuprequest/userCancelRequest</string>
+
+    <item name="requestDriverDetails" type="id" />
+    <string name="requestDriverDetails">8080/driverdetails</string>
+
+    <item name="requestPackagesList" type="id" />
+    <string name="requestPackagesList">8080/pickuprequest/findMyRequests</string>
+
+    <item name="requestSearchTopic" type="id" />
+    <string name="requestSearchTopic">8080/searchtopic/customerTopic</string>
+
+    <item name="requestOpenWebSocket" type="id" />
+    <string name="requestOpenWebSocket"> </string>
+
+    <item name="requestCloseWebSocket" type="id" />
+    <string name="requestCloseWebSocket"> </string>
+
+    <item name="requestFindImage" type="id" />
+    <string name="requestFindImage">8082/file/find</string>
+
+    <item name="requestRating" type="id" />
+    <string name="requestRating">8080/pickuprequest/rating</string>
+
+    <item name="requestTrackedRequest" type="id" />
+    <string name="requestTrackedRequest">8080/pickuprequest/isTrackedRequest</string>
+
+</resources>

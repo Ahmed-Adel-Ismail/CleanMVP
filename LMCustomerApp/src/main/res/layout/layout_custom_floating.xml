@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appzoneltd.lastmile.customer.subfeatures.menus.CustomLabelledFloatingButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom|right">
+
+    <FrameLayout
+        android:id="@+id/lm_floating_menu_images_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/lm_floating_menu_item_primary_image_view"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center|center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/locate_btn" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/lm_floating_menu_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/bit_margin"
+        android:layout_toLeftOf="@id/lm_floating_menu_images_layout"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/bit_margin"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_3"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</com.appzoneltd.lastmile.customer.subfeatures.menus.CustomLabelledFloatingButton>

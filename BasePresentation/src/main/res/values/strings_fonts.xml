@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- sample : http://stackoverflow.com/a/19692168/1956013 -->
+    <string name="font_family_sans_serif">sans-serif</string>
+    <string name="font_family_sans_serif_light">sans-serif-light</string>
+    <string name="font_family_sans_serif_thin">sans-serif-thin</string>
+    <string name="font_family_sans_serif_condensed">sans-serif-condensed</string>
+</resources>

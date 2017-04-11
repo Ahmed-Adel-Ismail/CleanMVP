@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_lines">10</integer>
+    <integer name="lines">4</integer>
+    <integer name="pickup_status_id">1</integer>
+
+</resources>

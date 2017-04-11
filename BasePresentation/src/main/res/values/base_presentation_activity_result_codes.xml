@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="resultCodeOk">-1</integer>
+    <integer name="resultCodeCanceled">0</integer>
+    <integer name="resultCodeFirstUser">1</integer>
+</resources>

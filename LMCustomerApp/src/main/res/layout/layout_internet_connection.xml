@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_1"
+        android:layout_marginTop="@dimen/margin_1"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clouds"
+            android:gravity="center"
+            android:padding="@dimen/margin_6"
+            android:text="@string/sign_in"
+            android:textColor="@color/concrete"
+            android:textSize="@dimen/text_size_5"
+            android:fontFamily="assets/PTS55F.ttf"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error_icon"
+            android:layout_margin="@dimen/margin_6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/clouds"
+            android:padding="@dimen/margin_5">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_connection_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clouds"
+            android:gravity="center"
+            android:text="@string/connection_error_title"
+            android:textColor="@color/concrete"
+            android:textSize="@dimen/text_size_2"
+            android:fontFamily="assets/PTS55F.ttf"/>
+
+        <TextView
+            android:id="@+id/tv_connection_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clouds"
+            android:gravity="center"
+            android:text="@string/connection_error_msg"
+            android:textColor="@color/concrete"
+            android:textSize="@dimen/text_size_2"
+            android:fontFamily="assets/PTS55F.ttf"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

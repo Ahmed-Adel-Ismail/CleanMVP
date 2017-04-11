@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/packages"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/all_packages" />
+        <item
+            android:id="@+id/tracking"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/tracking" />
+    </group>
+
+
+</menu>

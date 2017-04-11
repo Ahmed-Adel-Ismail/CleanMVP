@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addressModel" type="id" />
+    <item name="addressUnknownRepository" type="id" />
+    <item name="addressNullRepository" type="id" />
+    <item name="addressRepositoryAuth" type="id" />
+    <item name="addressRepositoryPushNotification" type="id" />
+</resources>

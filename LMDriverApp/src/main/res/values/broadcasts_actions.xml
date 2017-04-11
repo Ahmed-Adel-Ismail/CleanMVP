@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ACTION_ON_DEMAND_NOTIFICATION_ACCEPT">ACTION_ON_DEMAND_NOTIFICATION_ACCEPT</string>
+    <string name="ACTION_ON_DEMAND_NOTIFICATION_REJECT">ACTION_ON_DEMAND_NOTIFICATION_REJECT</string>
+
+</resources>

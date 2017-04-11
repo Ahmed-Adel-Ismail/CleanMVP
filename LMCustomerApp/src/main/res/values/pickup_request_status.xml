@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--In Process-->
+    <string name="status_new">NEW</string>
+    <string name="status_awaiting">AWAITING_PICKUP</string>
+    <string name="status_alternative">WAITING_FOR_CUSTOMER_ALTERNATIVE</string>
+    <string name="status_action_needed">ACTION_NEEDED</string>
+    <string name="status_verification">IN_PICKUP_VERIFICATION</string>
+    <string name="status_pickup">Out_For_Delivery</string>
+
+    <!--Completed-->
+    <string name="status_cancelled">CANCELED</string>
+
+</resources>

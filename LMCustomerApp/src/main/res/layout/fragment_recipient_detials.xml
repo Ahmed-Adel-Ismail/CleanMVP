@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipient_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/recipient_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_7"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/shipping_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rectangle_with_shadow"
+                        android:spinnerMode="dropdown"
+                        android:textSize="@dimen/text_size_2"
+                        android:focusableInTouchMode="true"/>
+
+                    <ImageView
+                        android:id="@+id/shipping_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/drawable_padding"
+                        android:src="@drawable/arrow_down" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shipping_service_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/service_missing_msg"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/shipment_service_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rectangle_with_shadow"
+                        android:spinnerMode="dropdown"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <ImageView
+                        android:id="@+id/type_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/drawable_padding"
+                        android:src="@drawable/arrow_down" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shipping_service_type_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/service_type_missing_msg"
+                    android:visibility="invisible" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/recip_name"
+                        style="@style/recipient_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_with_shadow"
+                        android:digits="@string/street_validations"
+                        android:hint="@string/recipient_name"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:padding="@dimen/drawable_padding"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical" />
+
+                    <ImageView
+                        android:id="@+id/add_from_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/user_icon_focus" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/recipient_name_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/recipient_name_missing_msg"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/recipient_phone_number"
+                    style="@style/recipient_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rectangle_with_shadow"
+                    android:hint="@string/recipient_phone"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="@dimen/drawable_padding" />
+
+                <TextView
+                    android:id="@+id/recipient_phone_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/recipient_phone_missing_msg"
+                    android:visibility="invisible" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rectangle_with_shadow"
+                        android:spinnerMode="dropdown"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <ImageView
+                        android:id="@+id/country_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/drawable_padding"
+                        android:src="@drawable/arrow_down" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/country_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/recipient_country_missing_msg"
+                    android:visibility="invisible" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rectangle_with_shadow"
+                        android:spinnerMode="dropdown"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <ImageView
+                        android:id="@+id/city_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/drawable_padding"
+                        android:src="@drawable/arrow_down" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/city_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/city_missing_msg"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/recipient_full_address"
+                    style="@style/recipient_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rectangle_with_shadow"
+                    android:hint="@string/full_Address"
+                    android:maxLength="200"
+                    android:padding="@dimen/drawable_padding" />
+
+
+                <TextView
+                    android:id="@+id/recipient_address_msg"
+                    style="@style/ErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/drawable_padding"
+                    android:text="@string/recipient_address_missing_msg"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/recipient_notes"
+                    style="@style/recipient_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rectangle_with_shadow"
+                    android:gravity="top|start"
+                    android:hint="@string/notes"
+                    android:lines="@integer/lines"
+                    android:maxLength="250"
+                    android:maxLines="@integer/max_lines"
+                    android:padding="@dimen/drawable_padding"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/pickup_next_review"
+                    style="@style/ButtonPickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/package_margin"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:padding="@dimen/margin_3"
+                    android:text="@string/next_pickup_review"
+                    android:elevation="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

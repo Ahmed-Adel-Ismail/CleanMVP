@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="requestCodeOpenCameraForCustomerId">6001</integer>
+    <integer name="requestCodeOpenCameraForCreditCard">6002</integer>
+    <integer name="requestCodeOpenCameraForVerifyPackageLeftImage">6003</integer>
+    <integer name="requestCodeOpenCameraForVerifyPackageRightImage">6004</integer>
+    <integer name="requestCodeNotificationPermission">6005</integer>
+</resources>

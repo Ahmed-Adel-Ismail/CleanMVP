@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="floating_btn_locate_me" type="id" />
+    <item name="floating_btn_pickup_menu" type="id" />
+    <item name="floating_btn_pickup_now" type="id" />
+    <item name="floating_btn_pickup_scheduled" type="id" />
+    <item name="floating_btn_detect_my_location" type="id"/>
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_host_container_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/screen_pickup_process_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/screen_pickup_process_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            tools:targetApi="lollipop" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/screen_pickup_process_progress_bars_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/screen_pickup_process_progress_bar_top_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|right"
+                android:layout_margin="16dp"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/screen_pickup_process_progress_bar_top_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|left"
+                android:layout_margin="16dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/screen_pickup_process_progress_bar_bottom_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="16dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/screen_pickup_process_progress_bar_bottom_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="16dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/screen_pickup_process_progress_bar_center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/screen_pickup_process_progress_failed_relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/screen_pickup_process_progress_failed_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@string/font_family_sans_serif_thin"
+                    android:text="@string/screen_pickup_process_loading_failed"
+                    android:textSize="@dimen/text_size_06" />
+
+                <Button
+                    android:id="@+id/screen_pickup_process_progress_failed_button"
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/screen_pickup_process_progress_failed_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent"
+                    android:onClick="onClick"
+                    android:text="@string/screen_pickup_process_loading_retry"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:id="@+id/screen_pickup_process_main_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/screen_pickup_process_main_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/screen_pickup_process_verify_package_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                    <RelativeLayout
+                        android:id="@+id/screen_pickup_process_verify_package_header_layout"
+                        style="@style/PickupProcessHeaderLayout">
+
+                        <TextView
+                            android:id="@+id/screen_pickup_process_verify_package_header_text_view"
+                            style="@style/PickupProcessHeaderTextView"
+                            android:text="@string/screen_pickup_process_verify_package_title" />
+
+                        <ImageView
+                            android:id="@+id/screen_pickup_process_verify_package_header_image"
+                            style="@style/PickupProcessHeaderImage" />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/screen_pickup_process_verify_package_fragment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/screen_pickup_process_verify_package_header_layout">
+
+                        <fragment
+                            android:id="@+id/screen_pickup_process_verify_package_fragment"
+                            class="com.appzoneltd.lastmile.driver.Flow$PickupProcessActivity$Verification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/screen_pickup_process_payment_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/screen_pickup_process_verify_package_relative_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/screen_pickup_process_payment_header_layout"
+                        style="@style/PickupProcessHeaderLayout">
+
+                        <TextView
+                            android:id="@+id/screen_pickup_process_payment_header_text_view"
+                            style="@style/PickupProcessHeaderTextView"
+                            android:text="@string/screen_pickup_process_payment_title" />
+
+                        <ImageView
+                            android:id="@+id/screen_pickup_process_payment_header_image"
+                            style="@style/PickupProcessHeaderImage" />
+                    </RelativeLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/screen_pickup_process_payment_fragment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/screen_pickup_process_payment_header_layout"
+                        android:visibility="visible">
+
+                        <fragment
+                            android:id="@+id/screen_pickup_process_payment_fragment"
+                            class="com.appzoneltd.lastmile.driver.Flow$PickupProcessActivity$Payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/screen_pickup_process_documents_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/screen_pickup_process_payment_relative_layout">
+
+
+                    <RelativeLayout
+                        android:id="@+id/screen_pickup_process_documents_header_layout"
+                        style="@style/PickupProcessHeaderLayout">
+
+                        <TextView
+                            android:id="@+id/screen_pickup_process_documents_header_text_view"
+                            style="@style/PickupProcessHeaderTextView"
+                            android:text="@string/screen_pickup_process_documents_title" />
+
+                        <ImageView
+                            android:id="@+id/screen_pickup_process_documents_header_image"
+                            style="@style/PickupProcessHeaderImage" />
+                    </RelativeLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/screen_pickup_process_documents_fragment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/screen_pickup_process_documents_header_layout"
+                        android:visibility="visible">
+
+                        <fragment
+                            android:id="@+id/screen_pickup_process_documents_fragment"
+                            class="com.appzoneltd.lastmile.driver.Flow$PickupProcessActivity$Documents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

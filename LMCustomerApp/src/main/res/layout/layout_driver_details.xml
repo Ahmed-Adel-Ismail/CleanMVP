@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/driver_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/driver_details_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_weight="2.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/driver"
+            android:padding="2dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="John Doe Ipsum"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/vehicle_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/driver_name"
+                android:layout_marginBottom="4dp"
+                android:text="Volkswavgen Truck # 12362"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <RatingBar
+                android:id="@+id/driver_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating_star"
+                android:stepSize="0.5" />
+
+            <ImageView
+                android:id="@+id/call_driver"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:elevation="2dp"
+                android:onClick="onClick"
+                android:src="@drawable/call" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.appzoneltd.lastmile.customer.subfeatures.RingProgressBar
+        android:id="@+id/time_wheel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end|bottom"
+        app:ringColor="@color/white"
+        app:ringProgressColor="@color/black"
+        app:ringWidth="1dp"
+        app:style="STROKE"
+        app:textColor="@color/white"
+        app:textIsShow="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"/>
+
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Last Mile Driver</string>
+    <string name="payment_method_cash">Cash</string>
+    <string name="payment_method_credit_card">Credit Card</string>
+    <string name="server_error_message">Connection error …</string>
+    <string name="server_success_message">Request completed</string>
+
+
+    <string name="screen_login_username_hint">Username (email or mobile number)</string>
+    <string name="screen_login_username_not_correct">Please check your email or mobile number</string>
+    <string name="screen_login_username_description">Username (email or mobile number)</string>
+    <string name="screen_login_password_hint">Password</string>
+    <string name="screen_login_password_not_correct">Please check your password</string>
+    <string name="screen_login_password_description">Password</string>
+    <string name="screen_login_password_action_label">Sign in</string>
+    <string name="screen_login_sign_in">SIGN IN</string>
+    <string name="screen_login_forgot_password"><u>Forgot password?</u></string>
+    <string name="screen_login_create_account">Create account</string>
+    <string name="screen_login_become_a_driver">BECOME A DRIVER</string>
+    <string name="screen_home_location_error_msg">Failed to get the current location</string>
+    <string name="screen_home_navigation_active">Navigation ongoing</string>
+    <string name="screen_home_connection_down">Connection is down</string>
+    <string name="screen_home_gps_required">Please enable GPS</string>
+
+    <string name="screen_pickup_process_title">Pickup process</string>
+    <string name="screen_pickup_process_loading_failed">Oops!! loading failed</string>
+    <string name="screen_pickup_process_loading_retry">Retry</string>
+
+    <string name="screen_pickup_process_verify_package_title">Step 1: Verify package</string>
+    <string name="screen_pickup_process_verify_package_package_nickname">Package nickname:</string>
+    <string name="screen_pickup_process_verify_package_package_type">Package type:</string>
+    <string name="screen_pickup_process_verify_package_package_weight">Package weight (kg)</string>
+    <string name="screen_pickup_process_verify_package_package_weight_error">Must provide valid weight</string>
+    <string name="screen_pickup_process_verify_package_whats_inside">Whats inside</string>
+    <string name="screen_pickup_process_verify_package_whats_inside_error">Must provide description</string>
+    <string name="screen_pickup_process_verify_package_additional_service">Additional service:</string>
+    <string name="screen_pickup_process_verify_package_additional_service_wrapping">Wrap&amp;Label</string>
+    <string name="screen_pickup_process_verify_package_additional_service_boxing">Box</string>
+    <string name="screen_pickup_process_verify_package_package_label">Package label:</string>
+    <string name="screen_pickup_process_verify_package_payment_at">Payment at:</string>
+    <string name="screen_pickup_process_verify_package_payment_at_pickup">Pickup</string>
+    <string name="screen_pickup_process_verify_package_payment_at_delivery">Delivery</string>
+    <string name="screen_pickup_process_verify_package_buy_with">Pay with</string>
+    <string name="screen_pickup_process_verify_package_button_submit">Submit</string>
+    <string name="screen_pickup_process_verify_package_submit_error">Invalid data</string>
+
+    <string name="screen_pickup_process_verify_package_image_dialog_button_change">Change</string>
+    <string name="screen_pickup_process_verify_package_image_dialog_button_cancel">Cancel</string>
+
+    <string name="screen_pickup_process_payment_title">Step 2: Payment</string>
+    <string name="screen_pickup_process_payment_invoice">Invoice#</string>
+    <string name="screen_pickup_process_payment_invoice_formatted">Invoice# %s</string>
+    <string name="screen_pickup_process_payment_date">Date:</string>
+    <string name="screen_pickup_process_payment_date_formatted">Date: %s</string>
+    <string name="screen_pickup_process_payment_time">Time:</string>
+    <string name="screen_pickup_process_payment_time_formatted">Time: %s</string>
+    <string name="screen_pickup_process_payment_service_type">SERVICE TYPE</string>
+    <string name="screen_pickup_process_payment_quantity">QTY</string>
+    <string name="screen_pickup_process_payment_price">PRICE</string>
+    <string name="screen_pickup_process_payment_total_service">Total services</string>
+    <string name="screen_pickup_process_payment_total_without_tax">Total without tax</string>
+    <string name="screen_pickup_process_payment_value_added_tax">Value added tax %</string>
+    <string name="screen_pickup_process_payment_total_amount">Total amount</string>
+    <string name="screen_pickup_process_payment_payment_method_title">PAYMENT METHOD</string>
+    <string name="screen_pickup_process_payment_terms_and_condition">Terms &amp; Conditions</string>
+    <string name="screen_pickup_process_payment_terms_and_condition_details">By giving us your shipment you accept our terms and conditions set out in the consignment note and/or the contract of carriage and/or the contract for the performance of other services on behalf of yourself and/or anyone else who has an interest in the shipment or the performance of other services irrespective of whether you have signed the front of our consignment note or not</string>
+    <string name="screen_pickup_process_payment_button_submit">Submit</string>
+    <string name="screen_pickup_process_payment_button_cancel">Cancel</string>
+    <string name="screen_pickup_process_payment_cancellation_title">Cancellation reason</string>
+    <string name="screen_pickup_process_payment_cancellation_spinner_title">Please select cancellation reason</string>
+    <string name="screen_pickup_process_payment_cancellation_additional_notes">Additional notes</string>
+    <string name="screen_pickup_process_payment_cancellation_button_ok">OK</string>
+    <string name="screen_pickup_process_payment_cancellation_button_cancel">Cancel</string>
+
+
+    <string name="screen_pickup_process_documents_title">Step 3: Document uploading</string>
+    <string name="screen_pickup_process_documents_uploading_title">Upload some documents to verify pickup request process</string>
+    <string name="screen_pickup_process_documents_uploading_customer_id">Customer ID</string>
+    <string name="screen_pickup_process_documents_uploading_credit_card">Credit card receipt</string>
+    <string name="screen_pickup_process_documents_uploading_barcode">Barcode scanner</string>
+    <string name="screen_pickup_process_documents_uploading_submit">Submit</string>
+    <string name="screen_pickup_process_documents_uploading_customer_id_required">Customer Id photo is needed</string>
+    <string name="screen_pickup_process_documents_uploading_credit_card_required">Credit card photo is needed</string>
+
+    <string name="on_demand_pickup_request_assigned_dialog_title">New Order</string>
+    <string name="on_demand_pickup_request_assigned_dialog_message">You have an order assigned \n\n%1$s \n\n%2$s </string>
+    <string name="on_demand_pickup_request_assigned_dialog_positive_button">Accept</string>
+    <string name="on_demand_pickup_request_assigned_dialog_negative_button">Reject</string>
+
+    <string name="permission_notification_title">Permission required</string>
+    <string name="location_permission_notification_body">Location permission required</string>
+
+    <string name="milestone_two_mile">In two miles</string>
+    <string name="milestone_one_mile">In one mile</string>
+    <string name="milestone_quarter_mile">In a quarter mile</string>
+    <string name="milestone_three_km">In three kilometers</string>
+    <string name="milestone_one_and_a_half_km">In one and a half kilometers</string>
+    <string name="milestone_half_km">In a half kilometer</string>
+
+
+
+</resources>

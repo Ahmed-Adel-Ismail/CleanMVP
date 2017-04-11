@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/pickup_item_margin"
+    android:paddingTop="@dimen/pickup_item_vertical_margin"
+    android:paddingBottom="@dimen/pickup_item_vertical_margin"
+    android:paddingRight="@dimen/pickup_item_vertical_margin">
+
+    <TextView
+        android:id="@+id/step_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/step_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       android:layout_marginLeft="@dimen/pickup_number_margin"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

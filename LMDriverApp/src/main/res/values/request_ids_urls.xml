@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- contracts sheet : https://docs.google.com/spreadsheets/d/1DmLCfDOlMLxtRLwCvtDc_x9lJQbTz6NAO2wV429Tc24/edit?pli=1#gid=0 -->
+
+    <!-- production ips -->
+
+    <string name="serverProductionUrlHttps">https://41.38.174.217:</string>
+    <string name="serverProductionUrlWss">wss://41.38.174.217:</string>
+
+    <!--<string name="serverProductionUrlHttps">https://192.168.1.104:</string>-->
+    <!--<string name="serverProductionUrlWss">wss://192.168.1.104:</string>-->
+
+    <!-- test ips -->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.104:</string>-->
+    <!--<string name="serverTestUrlWss">wss://192.168.1.104:</string>-->
+
+    <string name="serverTestUrlHttps">https://192.168.1.105:</string>
+    <string name="serverTestUrlWss">wss://192.168.1.105:</string>
+
+    <!--<string name="serverTestUrlHttps">https://41.38.174.217:</string>-->
+    <!--<string name="serverTestUrlWss">wss://41.38.174.217:</string>-->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.241:</string>-->
+    <!--<string name="serverTestUrlWss">wss://192.168.1.241:</string>-->
+
+    <!--<string name="serverTestUrlHttps">https://192.168.1.242:</string>-->
+    <!--<string name="serverTestUrlWss">wss://192.168.1.242:</string>-->
+
+    <!-- ports & paths -->
+
+    <item name="requestUploadImage" type="id" />
+    <string name="requestUploadImage">8082/file</string>
+
+    <item name="requestFindImage" type="id" />
+    <string name="requestFindImage">8082/file/find/</string>
+
+    <item name="requestDownloadImage" type="id" />
+    <string name="requestDownloadImage" />
+
+    <string name="requestRefreshToken">8080/d/oauth/token</string>
+    <string name="requestRegisterFirebaseToken">8080/vehicleregister/savefirebasetoken</string>
+
+    <item name="requestLogin" type="id" />
+    <string name="requestLogin">8080/d/oauth/token</string>
+
+    <item name="requestPickupOrders" type="id" />
+    <string name="requestPickupOrders">8080/activevehicle/getorders</string>
+
+    <item name="requestConfirmPackageDocuments" type="id" />
+    <string name="requestConfirmPackageDocuments">8080/driverRequestAndPackageDetail/confirmDocuments</string>
+
+    <item name="requestConfirmPickupInvoice" type="id" />
+    <string name="requestConfirmPickupInvoice">8080/driverRequestAndPackageDetail/confirmInvoice</string>
+
+    <item name="requestPickupInvoice" type="id" />
+    <string name="requestPickupInvoice">8080/driverRequestAndPackageDetail/invoice</string>
+
+    <item name="requestCancelRequest" type="id" />
+    <string name="requestCancelRequest">8080/driverRequestAndPackageDetail/cancelRequest</string>
+
+    <item name="requestAllCancellationReasons" type="id" />
+    <string name="requestAllCancellationReasons">8080/driverRequestAndPackageDetail/pickuprequest/findAllReasons</string>
+
+    <item name="requestAllPackageLabels" type="id" />
+    <string name="requestAllPackageLabels">8080/driverRequestAndPackageDetail/packagelabel/findAll</string>
+
+    <item name="requestPackageDetails" type="id" />
+    <string name="requestPackageDetails">8080/driverRequestAndPackageDetail/getPackageDetails</string>
+
+    <item name="requestAllPackageTypes" type="id" />
+    <string name="requestAllPackageTypes">8080/driverRequestAndPackageDetail/packagetype/findAll</string>
+
+    <item name="requestVerifyPackageDetails" type="id" />
+    <string name="requestVerifyPackageDetails">8080/driverRequestAndPackageDetail/verifyPackageDetails</string>
+
+    <item name="requestSubmitDriverAcceptedOnDemandPickup" type="id" />
+    <string name="requestSubmitDriverAcceptedOnDemandPickup">8080/driverRequestAndPackageDetail/acceptOnDemandPickup</string>
+
+    <item name="requestSubmitDriverRejectedOnDemandPickup" type="id" />
+    <string name="requestSubmitDriverRejectedOnDemandPickup">8080/driverRequestAndPackageDetail/rejectOnDemandPickup</string>
+
+    <item name="requestDriverStartNavigation" type="id" />
+    <string name="requestDriverStartNavigation">8080/driverRequestAndPackageDetail/startNavigation</string>
+
+    <item name="requestOpenDriverLocationSocket" type="id" />
+    <string name="requestOpenDriverLocationSocket">9761/updatelocation</string>
+
+    <item name="requestSendDriverLocationSocketMessage" type="id" />
+    <string name="requestSendDriverLocationSocketMessage" />
+
+    <item name="requestCloseDriverLocationSocket" type="id" />
+    <string name="requestCloseDriverLocationSocket" />
+
+    <item name="requestLoadingActivityOrders" type="id" />
+    <string name="requestLoadingActivityOrders">8080/loadingActivity/orders</string>
+
+    <item name="requestLoadingActivityCancellationReasons" type="id" />
+    <string name="requestLoadingActivityCancellationReasons">8080/loadingActivity/cancellationReasons</string>
+
+    <item name="requestAcceptLoadingActivityOrder" type="id" />
+    <string name="requestAcceptLoadingActivityOrder">8080/loadingActivity/accept</string>
+
+    <item name="requestRejectLoadingActivityOrder" type="id" />
+    <string name="requestRejectLoadingActivityOrder">8080/loadingActivity/reject</string>
+
+    <item name="requestJobOrdersRoute" type="id" />
+    <string name="requestJobOrdersRoute">8080/driverRequestAndPackageDetail/routes</string>
+
+    <!-- to be added to contracts :-->
+
+    <item name="requestRouteEdges" type="id" />
+    <string name="requestRouteEdges">8080/routeEdges</string>
+
+
+</resources>

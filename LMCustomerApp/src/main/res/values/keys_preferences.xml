@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PREFS_KEY_USER_INFO">PREFS_KEY_USER_INFO</string>
+    <string name="PREFS_KEY_NOTIFICATION_LIST">PREFS_KEY_NOTIFICATION_LIST</string>
+    <string name="PREFS_KEY_NOTIFICATION_COUNTER">PREFS_KEY_NOTIFICATION_COUNTER</string>
+</resources>

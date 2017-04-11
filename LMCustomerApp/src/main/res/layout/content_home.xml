@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/wet_asphalt"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/request_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="assets/PTC75F.ttf"
+                    android:onClick="onClick"
+                    android:padding="@dimen/margin_6"
+                    android:text="@string/request_pickup"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/pickup_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"></View>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trace_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="assets/PTC75F.ttf"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:padding="@dimen/margin_6"
+                    android:text="@string/trace_package"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/trace_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:visibility="gone"></View>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/layout_pickup_location" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

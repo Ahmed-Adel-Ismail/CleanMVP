@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floating_menu_parent"
+    android:layout_width="match_parent"
+    android:onClick="onClick"
+    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    tools:context=".features.main.menu.PickupFloatingMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+    </LinearLayout>
+
+</FrameLayout>

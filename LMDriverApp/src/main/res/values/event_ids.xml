@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="onNotifiedOnDemandPickup" type="id" />
+    <item name="onDemandPickupRequestAssignedDialog" type="id" />
+    <item name="onVerifyPackageImageDialog" type="id" />
+    <item name="onPickupProcessCancelPaymentDialog" type="id" />
+    <item name="onPickupProcessModelRequestsCompleted" type="id" />
+    <item name="onLocationTrackingServiceUpdateLocation" type="id" />
+    <item name="onSessionExpired" type="id" />
+
+</resources>

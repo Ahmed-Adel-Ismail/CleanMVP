@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.notificationlist.host.NotificationActivity">
+
+    <include
+        android:id="@+id/notification_list_toolbar"
+        layout="@layout/layout_app_toolbar"/>
+
+
+    <fragment
+        android:id="@+id/tracking_layout"
+        android:name="com.appzoneltd.lastmile.customer.features.notificationlist.NotificationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

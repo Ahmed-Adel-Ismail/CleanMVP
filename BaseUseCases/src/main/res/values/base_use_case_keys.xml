@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PREFS_KEY_TOKEN">PREFS_KEY_TOKEN</string>
+</resources>

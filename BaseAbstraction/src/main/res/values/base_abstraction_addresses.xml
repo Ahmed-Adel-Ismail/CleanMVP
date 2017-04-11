@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addressActivity" type="id" />
+    <item name="addressUnknownActor" type="id" />
+    <item name="addressNullActor" type="id" />
+    <item name="addressAuthHandler" type="id" />
+    <item name="addressAuthException" type="id" />
+    <item name="addressSessionExpiredHandler" type="id" />
+</resources>

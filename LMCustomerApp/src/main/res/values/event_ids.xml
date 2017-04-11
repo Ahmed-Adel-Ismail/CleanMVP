@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- for Events that are common among classes, they have no pre-fix -->
+    <item name="openLocationSettings" type="id" />
+
+    <!-- for Events that are specific to certain classes, the source class name is there prefix-->
+    <!-- for Presenters, the word "Presenter" is removed, like "MapPresenter" will be "Map" -->
+    <!-- for ViewBinders, the word "View" is removed, like "HomeFragmentViewBinder" will be "HomeBinder" -->
+    <item name="Map_onLocationSelected" type="id" />
+    <item name="Map_onGPSEnabled" type="id" />
+    <item name="Map_onMapVisibleChanged" type="id" />
+    <item name="HomeBinder_onSearchPlaceSelected" type="id" />
+    <item name="HomeBinder_onLocationPermissionChanged" type="id" />
+    <item name="SearchBar_onAddressValid" type="id" />
+    <item name="AppRegistry_gcmRegistered" type="id" />
+    <item name="NetworkErrorPresenter_OnRetryClicked" type="id" />
+
+    <item name="onDialogSubmitPickupRequest" type="id" />
+    <item name="dialogCancelRequestFailure" type="id"/>
+    <item name="onDialogCancelRequestFailureTryAgainClicked" type="id"/>
+
+    <!-- Notification types Ids -->
+    <item name="onNotifiedDriverBusy" type="id" />
+    <item name="onNotifiedDriverAssigned" type="id" />
+    <item name="onNotifiedDriverArrived" type="id" />
+    <item name="onNotifiedDriverOnHisWay" type="id" />
+    <item name="onNotifiedInvoice" type="id" />
+    <item name="onNotifiedDriverRating" type="id" />
+    <item name="onNotifiedTrackingNumber" type="id" />
+    <item name="onNotifiedRequestCancelled" type="id" />
+
+    <!--  Notification dialogs Ids -->
+    <item name="onDialogNotificationDriverBusy" type="id" />
+    <item name="onDialogNotificationDriverAssigned" type="id" />
+    <item name="onDialogNotificationDriverArrived" type="id" />
+    <item name="onDialogNotificationRquestCancelled" type="id" />
+
+
+</resources>
