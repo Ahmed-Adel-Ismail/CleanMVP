@@ -1,0 +1,111 @@
+apply plugin: 'com.android.library'
+
+ext.playServicesVersion = "9.8.0"
+ext.sdkVersion = 22
+ext.androidSupportVersion = "22.2.0"
+
+
+android {
+    compileSdkVersion sdkVersion
+    buildToolsVersion '25.0.0'
+//    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion sdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.'
+
+    }
+
+}
+
+configurations {
+    all*.exclude group: 'commons-logging', module: 'commons-logging'
+}
+
+
+
+dependencies {
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-annotations:' + androidSupportVersion
+    compile 'com.android.support:design:' + androidSupportVersion
+    compile 'com.google.firebase:firebase-core:' + playServicesVersion
+    compile "com.google.firebase:firebase-messaging:" + playServicesVersion
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.2'
+
+    compile group: 'com.google.guava', name: 'guava', version: '19.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+
+    compile 'com.google.android.gms:play-services-base:' + playServicesVersion
+    compile 'com.google.android.gms:play-services-location:' + playServicesVersion
+
+    // entities
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.16'
+
+    // use-cases
+
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
+    compile 'org.apache.httpcomponents:httpcore:4.3.2'
+    compile 'com.neovisionaries:nv-websocket-client:1.31'
+    compile "org.java-websocket:Java-WebSocket:1.3.0"
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+
+    // presentation
+
+
+    compile 'com.android.support:appcompat-v7:' + androidSupportVersion
+    compile 'com.android.support:design:' + androidSupportVersion
+    compile 'com.android.support:support-v4:' + androidSupportVersion
+    compile 'com.prolificinteractive:material-calendarview:1.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.jd-alexander:library:1.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+}
+
+
+
+
+
+

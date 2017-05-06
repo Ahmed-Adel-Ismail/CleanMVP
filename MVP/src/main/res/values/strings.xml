@@ -1,0 +1,7 @@
+<resources>
+    <string name="please_wait">please wait</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fine_location_dialog_msg">Turn on GPS to get use of "LastMile" features</string>
+    <string name="fine_location_dialog_title">GPS location required</string>
+</resources>

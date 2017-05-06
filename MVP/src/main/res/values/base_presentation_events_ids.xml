@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ViewBinder -->
+    <item name="startActivityAction" type="id" />
+    <item name="onCreate" type="id" />
+    <item name="onResume" type="id" />
+    <item name="onStart" type="id" />
+    <item name="onPause" type="id" />
+    <item name="onStop" type="id" />
+    <item name="onDestroy" type="id" />
+    <item name="onSaveInstanceState" type="id" />
+    <item name="onLowMemory" type="id" />
+    <item name="onActivityResult" type="id" />
+    <item name="onRequestPermissionsResult" type="id" />
+    <item name="onPrepareOptionsMenu" type="id" />
+    <item name="onCreateOptionsMenu" type="id" />
+    <item name="onOptionItemSelected" type="id" />
+    <item name="onBackPressed" type="id" />
+    <item name="onClick" type="id" />
+    <item name="onNavigationItemSelected" type="id" />
+    <item name="onTouch" type="id" />
+    <item name="onTouchEvent" type="id" />
+    <item name="onKeyDown" type="id" />
+    <item name="onRefresh" type="id" />
+    <item name="onItemSelected" type="id" />
+    <item name="onCheckedChanged" type="id" />
+    <item name="onLockedInteractions" type="id" />
+    <item name="onCalendarDateChanged" type="id" />
+    <item name="onUpdateModel" type="id" />
+    <item name="onExchangeModel" type="id" />
+    <item name="onActivityActionRequest" type="id" />
+    <item name="showToast" type="id" />
+    <item name="onLocationFound" type="id" />
+    <item name="onListItemEventListener" type="id" />
+    <item name="onNotificationReceived" type="id" />
+    <item name="onHandleNotification" type="id" />
+    <item name="onRouting" type="id" />
+    <item name="onMediaPlayerCompletion" type="id" />
+    <item name="onMediaPlayerError" type="id" />
+    <item name="onMediaPlayerPrepared" type="id" />
+
+    <item name="onServiceStarted" type="id" />
+    <item name="onServiceStartedAgain" type="id" />
+
+    <item name="onDialogPositiveClick" type="id" />
+    <item name="onDialogNegativeClick" type="id" />
+    <item name="onDialogNeutralClick" type="id" />
+
+    <item name="containerView" type="id" />
+
+    <!-- Receivers -->
+    <item name="onGPSStateChanged" type="id" />
+    <item name="onNetworkStateChanged" type="id" />
+
+    <item name="eventCategoryActivity" type="id" />
+    <item name="eventCategoryReceiver" type="id" />
+    <item name="eventCategoryRequestBasedCommand" type="id" />
+    <item name="eventCategoryItemListEventCommand" type="id" />
+    <item name="onHandleIntent" type="id">onHandleIntent</item>
+    <item name="onRequesterCommandEvent" type="id" />
+
+    <item name="onFineLocationDialogCancelled" type="id" />
+
+
+</resources>
